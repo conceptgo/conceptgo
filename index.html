@@ -1,145 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-">
-    <title>Concept Go</title>
-    <style>
-        body {
-            background-color: #D4E34A;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-        }
-        #content {
-            width: 100%;
-            margin: 0 auto;
-        }
-        h2, h3, p {
-            margin: 20px auto;
-            max-width: 1200px;
-            text-align: center;
-            margin-left: 200px;
-            margin-right: 200px;
-        }
-        #top_bar {
-            background-color: rgb(255, 255, 255);
-            height: 25px; /* Halved height */
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table th {
-            text-align: center;
-            padding: 10px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: auto;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept Go</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    
-    <table>
-        <thead>
-            <tr>
-                <th><a href="index.html"><img src="Logo Home CG.png" alt = "HOME" width = 150px></th>
-                <th><a href="ProfessionCG.html"><img src="Cody- Profession (1).png" alt = "profession" width = 150px></th>
-                <th><a href="Pricing Page.html"><img src="Logo pricing cg.png" alt = "profession" width = 150px></th>
-                <th><a href="Example Page.html"><img src="logo examples CG.png" alt = "profession" width = 150px></th>
-                <th><a href="Contact Us Page.html"><img src="logo contact us CG.png" alt = "profession" width = 150px></th>
-            </tr>
-        </thead>
-    </table>
+    <header>
+        <nav>
+            <div class="large-screen-nav">
+                <a href="index.html"><img src="Logo Home CG.png" alt="Home" width="150"></a>
+                <a href="ProfessionCG.html"><img src="Cody- Profession (1).png" alt="Profession" width="150"></a>
+                <a href="Pricing Page.html"><img src="Logo pricing cg.png" alt="Pricing" width="150"></a>
+                <a href="Example Page.html"><img src="logo examples CG.png" alt="Examples" width="150"></a>
+                <a href="Contact Us Page.html"><img src="logo contact us CG.png" alt="Contact Us" width="150"></a>
+            </div>
+            <button id="menu-toggle">Menu</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ProfessionCG.html">Profession</a></li>
+                <li><a href="Pricing Page.html">Pricing</a></li>
+                <li><a href="Example Page.html">Examples</a></li>
+                <li><a href="Contact Us Page.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="top_bar"></div> <!-- White bar with no text -->
+    <main>
+        <section class="banner">
+            <img src="Cody version - website.png" alt="Banner Image">
+        </section>
 
-    <h2><img src="Cody version - website.png" alt="Banner Image"></h2>
+       
 
-    <h2>Welcome to Concept Go - Where Creativity Meets Connection</h2>
-    <p>At Concept Go, we believe in the power of personal collaboration. Our mission is to create stunning, high-quality graphics that not only elevate your business's online presence but also reflect your unique identity and values.</p>
-     <p>We specialize in working 1:1 with our clients, taking the time to truly understand your vision and goals. Whether you're a medical practice, non-profit organization, community program, sports program, dental or private practice, small business, or restaurant, our individualized approach ensures that every design we deliver is tailored to your needs.</p>
-     <p> With years of experience and a passion for creativity, we empower you to take control of your social media by providing ready-to-use visuals that make managing your platforms effortless and impactful. Let's build something amazing together and help your business shine online.</p>
+        <section class="welcome">
+              <h2>Welcome to Concept Go - Where Creativity Meets Connection</h2>
+               <p>At Concept Go, we believe in the power of personal collaboration. Our mission is to create stunning, high-quality graphics that not only elevate your business's online presence but also reflect your unique identity and values.</p>
+               <p>We specialize in working 1:1 with our clients, taking the time to truly understand your vision and goals. Whether you're a medical practice, non-profit organization, community program, sports program, dental or private practice, small business, or restaurant, our individualized approach ensures that every design we deliver is tailored to your needs.</p>
+               <p> With years of experience and a passion for creativity, we empower you to take control of your social media by providing ready-to-use visuals that make managing your platforms effortless and impactful. Let's build something amazing together and help your business shine online.</p>
+        </section>
 
+        <section class="endorsement">
+            <h3>We are currently endorsed by:</h3>
+            <img src="PI doctors.png" alt="PI Doctors">
+            <h3></h3>
+            <img src="Emilia Logo transparent copy 2.png" alt="emilia image">  
+        </section>
 
+        <section class="why-concept-go">
+          <h2>Why Concept Go works for you</h2>
+          <p>Because your business deserves graphics that work as hard as you do. At Concept Go, we create designs that are not only visually stunning but also strategically aligned with your goals. Every graphic is tailored to showcase your expertise, capture attention, and make your message memorable.</p>
+          <p>With a streamlined process and designs ready to use, ConceptGo makes it easy for you to stay ahead online—so you can focus on growing your business.</p>
+          <p>Let's turn your vision into impact!</p>
+        </section>
 
+        <section class="pricing">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-packages">
+                <div class="package">
+                    <h3>Basic Package</h3>
+                    <p>$275/month</p>
+                    <p>Perfect for consistent, professional visuals.</p>
+                </div>
+                <div class="package">
+                    <h3>Standard Package</h3>
+                    <p>$500/month</p>
+                    <p>Ideal for more revisions, volume, and priority service.</p>
+                </div>
+                <div class="package">
+                    <h3>Add-Ons</h3>
+                    <p>Starting at $100/project</p>
+                </div>
+            </div>
+<p class = "learn-more-pricing">To learn more about pricing, view the <a href="Pricing Page.html">  pricing page</a>.</p>
+        </section>
+    </main>
 
-     
-    
-    <h2>Why Concept Go works for you</h2>
-    <p>Because your business deserves graphics that work as hard as you do. At Concept Go, we create designs that are not only visually stunning but also strategically aligned with your goals. Every graphic is tailored to showcase your expertise, capture attention, and make your message memorable.</p>
-    <p>With a streamlined process and designs ready to use, ConceptGo makes it easy for you to stay ahead online—so you can focus on growing your business.</p>
-    <p>Let's turn your vision into impact!</p>
+    <footer>
+        <p>Concept Go, Founder: Allison Pinsky</p>
+        <p>Email: Conceptgo@icloud.com | Facebook: @conceptgo_ | Instagram: @conceptgo</p>
+    </footer>
 
-
-
-
-    <h2>We are currently endorsed by:</h2>
-    <div style="position: relative; text-align: center; width: 40%; margin: auto;">
-        <img src="PI doctors.png" alt="PI Doctors">
-    </div>
-<p></p>
-
-    <img src="Emilia Logo transparent copy 2.png" width = 300px>
-
-
-
-    <p></p>
- 
-
-
-
-
-    <div style="text-align: center; background-color: #FF7F50; padding: 20px; color: #fff; font-family: Arial, sans-serif;">
-        <h2>Simple, Transparent Pricing</h2>
-<div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-  <!-- Basic Package -->
-  <div style="background-color: #fff; color: #333; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 250px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <h3 style="color: #FF7F50; margin: 0;">Basic Package</h3>
-    <p style="font-size: 24px; font-weight: bold; margin: 10px 0;">$275/month</p>
-    <p style="font-size: 14px; margin: 10px 0;">Perfect for consistent, professional visuals.</p>
-    <a href="Pricing Page.html" style="text-decoration: none;">
-      <button style="background-color: #FF7F50; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-        Learn More
-      </button>
-    </a>
-  </div>
-  <!-- Standard Package -->
-  <div style="background-color: #fff; color: #333; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 250px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <h3 style="color: #FF7F50; margin: 0;">Standard Package</h3>
-    <p style="font-size: 24px; font-weight: bold; margin: 10px 0;">$500/month</p>
-    <p style="font-size: 14px; margin: 10px 0;">Ideal for more revisions, volume, and priority service.</p>
-    <a href="Pricing Page.html" style="text-decoration: none;">
-      <button style="background-color: #FF7F50; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-        Learn More
-      </button>
-    </a>
-  </div>
-  <!-- Add-Ons -->
-  <div style="background-color: #fff; color: #333; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 250px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <h3 style="color: #FF7F50; margin: 0;">Add-Ons</h3>
-    <p style="font-size: 14px; margin: 10px 0;">Starting at $100/project</p>
-    <a href="Pricing Page.html" style="text-decoration: none;">
-      <button style="background-color: #FF7F50; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-        Learn More
-      </button>
-    </a>
-  </div>
-</div>
-<p style="margin-top: 20px; font-size: 14px;">
-  See full pricing and details on our <a href="Pricing Page.html" style="color: #fff; text-decoration: underline;">Pricing Page</a>.
-</p>
-</div>
-    
-    
-
-    <p> Concept Go,    Founder: Allison Pinsky  <br>  
-        Email: Conceptgo@icloud.com ;  facebook: @conceptgo_ ;   instagram: @conceptgo</p>
+    <script src="script.js"></script>
 </body>
 </html>

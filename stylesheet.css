@@ -1,0 +1,245 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #D4E34A;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #D4E34A;
+    padding: 10px;
+}
+
+.large-screen-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+    background: #FF7F50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#nav-menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+#nav-menu li {
+    margin: 0;
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.emilia img {
+    width: 10%;
+    max-width: 10px;
+    height: auto;
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+
+.welcome, .endorsement, .pricing, .why-concept-go {
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome h2, .endorsement h3, .pricing h2 {
+    margin-bottom: 10px;
+}
+
+
+.learn-more-pricing p {
+    font-size: .9rem
+}
+
+.why-concept-go {
+background-color: #D4E34A;
+color: #333;
+padding: 40px 20px;
+margin: 20px auto;
+border-radius: 8px;
+box-shadow: 0, 4px 6px rgba(0, 0, 0, 0.1);
+max-width: 1200px;
+}
+
+.why-concept-go h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.why-concept-go p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px
+}
+
+.pricing {
+    background-color: #FF7F50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pricing-packages {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.package {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    width: 20%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.package h3, .package p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #D4E34A;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: .9rem;
+    color: #333;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+margin: 5px 0;
+}
+
+footer a {
+    color:#D4E34A;
+    text-decoration: none;
+}
+
+.pricing-packages{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap:20px;
+}
+
+.endorsement img {
+    max-width: 3000px;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.pricing-packages {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .large-screen-nav {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+
+    .welcome, .endorsement, .pricing, .why-concept-go, .learn-more-pricing {
+        padding: 10px;
+    }
+
+    .why-concept-go h2 {
+        font-size: 1.5em;
+    }
+
+    .why-concept-go p {
+        font-size: .9rem;
+    }
+
+    .learn-more-pricing p {
+        font-size: .9rem
+    }
+
+    .welcome h2, .endorsement h3, .pricing h2, .pricing p {
+        font-size: 1rem;
+    }
+
+    .pricing-packages {
+        flex-direction: column;
+    }
+
+    .package {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    } 
+
+    .banner img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .emilia img {
+        width: 60%;
+        max-width: 100%;
+    }
+
+    .endorsement {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .endorsement img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    footer {
+        padding: 15px 5px;
+        font-size: .8rem;
+    }
+
+}
